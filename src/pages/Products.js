@@ -8,7 +8,7 @@ import t6 from "../img/t-6.jpg";
 import t7 from "../img/t-7.jpg";
 import t8 from "../img/t-8.jpg";
 import t9 from "../img/t-9.jpg";
-
+import ImageGallery from 'react-image-gallery';
 function Products() {
   return (
     <>

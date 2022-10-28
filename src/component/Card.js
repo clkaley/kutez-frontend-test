@@ -2,6 +2,15 @@ import React from "react";
 import "./style.css";
 import { FaShoppingBasket, FaRegCreditCard } from "react-icons/fa";
 import { toast } from "react-toastify";
+import ImageGallery from 'react-image-gallery';
+import t1 from "../img/t-1.jpg";
+import t3 from "../img/t-3.jpg";
+import t4 from "../img/t-4.jpg";
+import t5 from "../img/t-5.jpg";
+import t6 from "../img/t-6.jpg";
+import t7 from "../img/t-7.jpg";
+import t8 from "../img/t-8.jpg";
+import t9 from "../img/t-9.jpg";
 function Card(props) {
   console.log(props);
 
@@ -28,12 +37,37 @@ function Card(props) {
       progress: undefined,
       theme: "light",
     });
+
+    // const images = [
+    //   {
+    //     t1
+    //   },
+    //   {
+    //   t3
+    //   },
+    //   {
+    //    t4
+    //   },
+    // ];
+
+    const images = [
+      {
+        original:t1,
+      },
+      {
+        original:t3,
+      },
+      {
+        original:t4,
+      },
+    ];
+    
   return (
     <>
-      <div className="col-lg-4 col-xl-3 col-md-6 col-sm-6  mt-4">
+      <div className="col-lg-4 col-xl-4 col-md-6 col-sm-6  mt-4">
         <div className="card">
           <div className="card-body">
-            <img className="card-img-top" src={props.img} alt="" />
+            <ImageGallery items={images} />
             <div className="about">
               <h4 className="mt-3">{props.name}</h4>
               <p>{props.about}</p>
@@ -64,6 +98,7 @@ function Card(props) {
                     style={{ marginBottom: "2px", marginLeft: "10px" }}
                   />
                 </button>
+                
               </div>
             </div>
           </div>
