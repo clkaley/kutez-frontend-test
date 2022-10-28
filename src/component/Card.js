@@ -1,86 +1,44 @@
 import React from "react";
-import tsort1 from '../img/t-1.jpg'
-import tsort2 from '../img/t-2.jpg'
-import tsort3 from '../img/t-3.jpg'
-import tsort4 from '../img/t-4.jpg'
-import tsort5 from '../img/t-5.jpg'
-import tsort6 from '../img/t-6.jpg'
-import tsort7 from '../img/t-7.jpg'
-function Card() {
+import "./style.css";
+import { FaShoppingBasket, FaRegCreditCard } from "react-icons/fa";
+
+function Card(props) {
+  console.log(props);
   return (
     <>
-      <div className="container">
-        <div className="row">
-          <div className="col-sm-6 col-lg-4 col-xl-3">
-            <div className="card mt-5" >
-              <img 
-              src={tsort1}
-              className="card-img-top" alt="" />
-              <p className="product-title">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Voluptate neque iure voluptates! Optio, cupiditate perspiciatis.
-              </p>
-              <h6 className="product-title">80TL</h6>
-            </div>
-          </div>
-          <div className="col-sm-6 col-lg-4 col-xl-3">
-            <div className="card mt-5" >
-              <img 
-              src={tsort1}
-              className="card-img-top" alt="" />
-              <p className="product-title">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Voluptate neque iure voluptates! Optio, cupiditate perspiciatis.
-              </p>
-              <h6 className="product-title">80TL</h6>
-            </div>
-          </div>
-          <div className="col-sm-6 col-lg-4 col-xl-3">
-            <div className="card mt-5" >
-              <img 
-              src={tsort1}
-              className="card-img-top" alt="" />
-              <p className="product-title">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Voluptate neque iure voluptates! Optio, cupiditate perspiciatis.
-              </p>
-              <h6 className="product-title">80TL</h6>
-            </div>
-          </div>
-          <div className="col-sm-6 col-lg-4 col-xl-3">
-            <div className="card mt-5" >
-              <img 
-              src={tsort1}
-              className="card-img-top" alt="" />
-              <p className="product-title">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Voluptate neque iure voluptates! Optio, cupiditate perspiciatis.
-              </p>
-              <h6 className="product-title">80TL</h6>
-            </div>
-          </div>
-          <div className="col-sm-6 col-lg-4 col-xl-3">
-            <div className="card mt-5" >
-              <img 
-              src={tsort1}
-              className="card-img-top" alt="" />
-              <p className="product-title">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Voluptate neque iure voluptates! Optio, cupiditate perspiciatis.
-              </p>
-              <h6 className="product-title">80TL</h6>
-            </div>
-          </div>
-          <div className="col-sm-6 col-lg-4 col-xl-3">
-            <div className="card mt-5" >
-              <img 
-              src={tsort1}
-              className="card-img-top" alt="" />
-              <p className="product-title">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Voluptate neque iure voluptates! Optio, cupiditate perspiciatis.
-              </p>
-              <h6 className="product-title">80TL</h6>
+      <div className="col-lg-4 col-md-6 col-sm-12 mt-4">
+        <div className="card">
+          <div className="card-body">
+            <img className="card-img-top" src={props.img} alt="" />
+            <div className="about">
+              <h4 className="mt-3">{props.name}</h4>
+              <p>{props.about}</p>
+
+              <div className="product-size mt-1">
+                <div className="size s">S</div>
+                <div className="size m">M</div>
+                <div className="size l">L</div>
+              </div>
+              <div className="product-color mt-2">
+                <div className="color black"></div>
+                <div className="color blue"></div>
+                <div className="color white"></div>
+              </div>
+              <h4 className="price mt-3">{props.price} $</h4>
+              <div className="flex-container">
+                <button className="button">
+                  Add Basket{" "}
+                  <FaShoppingBasket
+                    style={{ marginBottom: "2px", marginLeft: "10px" }}
+                  />
+                </button>
+                <button className="button">
+                  Checkout{" "}
+                  <FaRegCreditCard
+                    style={{ marginBottom: "2px", marginLeft: "10px" }}
+                  />
+                </button>
+              </div>
             </div>
           </div>
         </div>
