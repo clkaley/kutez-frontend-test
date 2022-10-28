@@ -35,3 +35,77 @@ footer{
 .bg-light{
     background-color: #4c738f !important;
 }
+
+
+.flex-container{
+    display: flex;
+    justify-content: center;
+}
+.button{
+    text-align: center;
+    border:none;
+    background-color: #4c738f;
+    margin-left: 15px;
+    padding: 15px 20px;
+    border-radius: 5px;
+}
+
+.button:hover{
+    background-color: transparent;
+    color: #4c738f;
+}
+
+.card{
+    background-color: transparent;
+    border-radius: 15px;
+    transition: all 0.8s;
+}
+
+.card:hover{
+    transform: scale(0.95);
+    box-shadow:0px 0px 5px 5px #4c738f;
+}
+
+.product-color{
+    display: flex;
+    justify-content: center;
+}
+
+.color{
+    margin-left: 10px;
+    background-color: red;
+    border-radius: 100%;
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+}
+
+.white{
+    background-color: white;
+}
+
+.black{
+    background-color: black;
+}
+
+.blue{
+    background-color: #4c738f;
+}
+
+.product-size{
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.size{
+    cursor: pointer;
+    height: 25px;
+    width: 25px;
+    background-color: transparent;
+    margin-left: 10px;
+}
+
+.price{
+    text-align: center;
+}
