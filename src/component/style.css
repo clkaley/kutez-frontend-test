@@ -1,0 +1,31 @@
+.navbar{
+    background-color: #3B7097 !important;
+    padding: 20px !important;
+}
+
+.btn-outline-success{
+    color: #F6E2BC;
+    border-color:#F6E2BC; ;
+}
+
+.btn-outline-success:hover{
+    background-color: #F6E2BC;
+    color:#3B7097 ;
+    border-color:#F6E2BC ;
+}
+
+.form-control{
+    background-color: #f6f0e6;
+    border-color: none;
+    transition: none;
+}
+
+.form-control:hover{
+    border-color: none;
+    background-color: #f6f0e6;
+}
+
+.dropdown-menu{
+    background-color: #f6f0e6;
+}
+
