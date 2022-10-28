@@ -6,11 +6,6 @@ import ImageGallery from 'react-image-gallery';
 import t1 from "../img/t-1.jpg";
 import t3 from "../img/t-3.jpg";
 import t4 from "../img/t-4.jpg";
-import t5 from "../img/t-5.jpg";
-import t6 from "../img/t-6.jpg";
-import t7 from "../img/t-7.jpg";
-import t8 from "../img/t-8.jpg";
-import t9 from "../img/t-9.jpg";
 function Card(props) {
   console.log(props);
 
@@ -37,18 +32,6 @@ function Card(props) {
       progress: undefined,
       theme: "light",
     });
-
-    // const images = [
-    //   {
-    //     t1
-    //   },
-    //   {
-    //   t3
-    //   },
-    //   {
-    //    t4
-    //   },
-    // ];
 
     const images = [
       {
